@@ -1,5 +1,9 @@
 # Monorepo-template
 
+## About
+
+This is a monorepo template for Javascript based applications.
+
 ## Requirements
 
 - [NodeJs](https://nodejs.org/en/)
@@ -26,3 +30,11 @@
   For a specific packge
 
       yarn watch-scope [package_name]
+
+- ## Add a new package
+
+      yarn generate
+      
+  Then simply follow the prompt.
+  
+  **Note**: Re-run `yarn` afterwards to make sure that every package is correctly installed.
