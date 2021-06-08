@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "CommonJs",
+    "target": "ES6",
+    "outDir": "./dist/",
+    "rootDir": "./src",
+    "declaration": true,
+    "noImplicitAny": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "moduleResolution": "node",
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}
