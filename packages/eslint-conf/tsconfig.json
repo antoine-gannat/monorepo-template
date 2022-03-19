@@ -8,9 +8,7 @@
     "noImplicitAny": true,
     "noUnusedParameters": true,
     "noUnusedLocals": true,
-    "moduleResolution": "node",
+    "moduleResolution": "node"
   },
-  "include": [
-    "./src/**/*"
-  ]
+  "include": ["./src/**/*"]
 }

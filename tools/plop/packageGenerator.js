@@ -14,13 +14,13 @@ module.exports = {
     },
   ],
   actions: (data) => {
-    const destination = "packages/{{packageName}}/";
+    const destination = "../../packages/{{packageName}}/";
     function addMany(templateName) {
       return {
         type: "addMany",
         destination,
-        templateFiles: "tools/plop/templates/" + templateName + "/**",
-        base: "tools/plop/templates/" + templateName,
+        templateFiles: "templates/" + templateName + "/**",
+        base: "templates/" + templateName,
         force: true,
         globOptions: {
           dot: true,

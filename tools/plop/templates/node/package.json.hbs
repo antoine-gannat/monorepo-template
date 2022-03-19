@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "watch": "ts-node-dev --deps --respawn --transpile-only src/index.ts",
+    "start": "ts-node-dev --deps --respawn --transpile-only src/index.ts",
     "build": "yarn clean && tsc",
     "clean": "rimraf ./dist",
     "lint": "eslint src/** --ext .ts --ext .tsx --fix",

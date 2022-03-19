@@ -7,8 +7,8 @@
   "scripts": {
     "build": "lerna run build",
     "build-scope": "lerna run build --scope",
-    "watch": "lerna run watch --parallel",
-    "watch-scope": "yarn watch --scope",
+    "start": "lerna run start --parallel",
+    "start-scope": "yarn start --scope",
     "clean": "lerna run clean",
     "test": "lerna run test",
     "test:watch": "lerna run test:watch",

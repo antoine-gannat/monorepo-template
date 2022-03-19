@@ -23,18 +23,18 @@ This is a monorepo template for Javascript based applications.
 
       yarn build-scope [package_name]
 
-- ### Watch (for development)
+- ### Start (for development)
 
-      yarn watch
+      yarn start
 
   For a specific packge
 
-      yarn watch-scope [package_name]
+      yarn start-scope [package_name]
 
 - ## Add a new package
 
       yarn generate
-      
+
   Then simply follow the prompt.
-  
+
   **Note**: Re-run `yarn` afterwards to make sure that every package is correctly installed.
