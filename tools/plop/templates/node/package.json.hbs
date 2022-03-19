@@ -6,16 +6,20 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "watch": "ts-node-dev --deps --respawn --transpile-only src/index.ts",
-    "build": "npm run clean && tsc",
+    "build": "yarn clean && tsc",
     "clean": "rimraf ./dist",
     "lint": "eslint src/** --ext .ts --ext .tsx --fix",
     "test": "jest",
     "test:watch": "jest -w"
   },
   "dependencies": {
-    "eslint-conf": "*"
+    "typescript": "^4.6.2"
   },
   "devDependencies": {
-    "ts-node-dev": "^1.1.6"
+    "@types/jest": "^27.4.1",
+    "eslint-conf": "*",
+    "jest": "^27.5.1",
+    "ts-node-dev": "^1.1.6",
+    "rimraf": "^3.0.2"
   }
 }

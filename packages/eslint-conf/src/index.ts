@@ -28,6 +28,3 @@ export const configuration = {
     "plugin:@typescript-eslint/recommended",
   ],
 };
-
-// to be imported from .eslintrc
-module.exports = configuration;

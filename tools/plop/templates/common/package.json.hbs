@@ -6,13 +6,19 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "watch": "tsc --watch",
-    "build": "npm run clean && tsc",
+    "build": "yarn clean && tsc",
     "clean": "rimraf ./dist",
     "lint": "eslint src/** --ext .ts --ext .tsx --fix",
     "test": "jest",
     "test:watch": "jest -w"
   },
   "dependencies": {
-    "eslint-conf": "*"
+    "typescript": "^4.6.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "eslint-conf": "*",
+    "jest": "^27.5.1",
+    "rimraf": "^3.0.2"
   }
 }

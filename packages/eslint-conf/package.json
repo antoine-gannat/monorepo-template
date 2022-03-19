@@ -6,14 +6,20 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "watch": "tsc --watch",
-    "build": "npm run clean && tsc",
-    "clean": "rimraf ./lib"
+    "build": "yarn clean && tsc",
+    "clean": "rimraf ./lib",
+    "test": "jest",
+    "test:watch": "jest -w"
   },
   "dependencies": {
-    "eslint": "^7.25.0"
+    "eslint": "^7.25.0",
+    "typescript": "^4.6.2"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.22.1",
-    "@typescript-eslint/parser": "^4.22.1"
+    "@typescript-eslint/parser": "^4.22.1",
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "rimraf": "^3.0.2"
   }
 }

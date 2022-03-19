@@ -1,4 +1,4 @@
-const packageGenerator = require("./tools/plop/packageGenerator");
+const packageGenerator = require("./packageGenerator");
 
 module.exports = function (plop) {
   plop.setGenerator("package", packageGenerator);
