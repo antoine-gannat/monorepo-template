@@ -1,4 +1,6 @@
-export const configuration = {
+// Using module.exports instead of export for compatibility with .eslintrc
+
+module.exports = {
   env: {
     browser: true,
     commonjs: true,
@@ -28,6 +30,3 @@ export const configuration = {
     "plugin:@typescript-eslint/recommended",
   ],
 };
-
-// Root export required by to be used in .eslintrc
-module.exports = configuration;
