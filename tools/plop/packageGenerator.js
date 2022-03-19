@@ -4,7 +4,7 @@ module.exports = {
       type: "list",
       name: "packageType",
       message: "What kind of package to create ?",
-      choices: ["react", "webpack", "lib", "node"],
+      choices: ["react", "webpack", "basic", "node"],
       default: 0,
     },
     {
@@ -39,8 +39,8 @@ module.exports = {
       case "node":
         actions.push(addMany("node"));
         break;
-      case "lib":
-        actions.push(addMany("library"));
+      case "basic":
+        actions.push(addMany("basic"));
         break;
       case "webpack":
         // for webpack, add also the react template

@@ -14,7 +14,8 @@
     "test:watch": "lerna run test:watch",
     "prettier": "prettier --write ./packages/**/src/**",
     "generate": "plop --plopfile ./tools/plop/plopfile.js",
-    "lint": "lerna run lint"
+    "lint": "lerna run lint",
+    "lint-scope": "lerna run lint --scope"
   },
   "devDependencies": {
     "@types/node": "^12.0.0",
