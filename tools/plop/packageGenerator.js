@@ -4,7 +4,7 @@ module.exports = {
       type: "list",
       name: "packageType",
       message: "What kind of package to create ?",
-      choices: ["react", "webpack", "basic", "node"],
+      choices: ["react", "react-native", "webpack", "basic", "node"],
       default: 0,
     },
     {
@@ -35,6 +35,9 @@ module.exports = {
     switch (data.packageType) {
       case "react":
         actions.push(addMany("react"));
+        break;
+      case "react-native":
+        actions.push(addMany("react-native"));
         break;
       case "node":
         actions.push(addMany("node"));
