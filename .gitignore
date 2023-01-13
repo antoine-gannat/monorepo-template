@@ -25,3 +25,5 @@ yarn-error.log*
 
 tsconfig.tsbuildinfo
 .vscode/settings.json
+
+.expo
