@@ -1,13 +1,14 @@
 {
   "name": "{{packageName}}",
   "version": "1.0.0",
-  "main": "./src/index.ts",
+  "main": "__generated__/AppEntry.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "lint": "eslint src/** --ext .ts --ext .tsx --fix"
+    "lint": "eslint src/** --ext .ts --ext .tsx --fix",
+    "postinstall": "expo-yarn-workspaces postinstall && cp ../../tools/AppEntryTemplate.js __generated__/AppEntry.js"
   },
   "dependencies": {
     "@expo/webpack-config": "^0.17.2",
